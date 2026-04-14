@@ -16,7 +16,6 @@ CREATE USER User_D WITH PASSWORD = 'Senha123@';
 CREATE USER User_E WITH PASSWORD = 'Senha123@';
 
 -- Q02: Considere o esquema de banco de dados relacional university. O User_A poderá selecionar ou modificar qualquer relação, exceto CLASSROOM, e pode conceder qualquer um desses privilégios a outros usuários.
-
 GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA :: university TO User_A WITH GRANT OPTION; -- Permissões com GRANT
 
 DENY SELECT, INSERT, UPDATE, DELETE ON university.CLASSROOM TO User_A; -- Restrição com DENY
